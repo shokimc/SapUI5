@@ -1,44 +1,46 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:vbm="sap.ui.vbm" xmlns:commons="sap.ui.commons" xmlns:layout="sap.ui.layout" controllerName="test_sapui5.controller.View1" displayBlock="true">	
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	controllerName="test_sapui5.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" 
+	xmlns:vbm="sap.ui.vbm"
+	xmlns:commons="sap.ui.commons"
+	xmlns:layout="sap.ui.layout">
 
 	<App id="app">
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<layout:VerticalLayout>
+					<layout:VerticalLayout >
 						<layout:HorizontalLayout> </layout:HorizontalLayout>
-						<layout:HorizontalLayout>
+						<layout:HorizontalLayout >
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Málaga" subheader="Máquina 1" press="onpress1">
 						<TileContent unit="EUR" footer="Estado 1">
-							<NumericContent scale="M" value="2.56" valueColor="Good" indicator="Up"/>
+							<NumericContent scale="M" value="2.56" valueColor="Good" indicator="Up" />
 						</TileContent>
 					</GenericTile>		
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Córdoba" subheader="Máquina 1" press="onpress2">
 						<TileContent unit="EUR" footer="Estado 2">
-							<NumericContent scale="M" value="1.78" valueColor="Error" indicator="Down"/>
+							<NumericContent scale="M" value="1.78" valueColor="Error" indicator="Down" />
 						</TileContent>
 					</GenericTile>		
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Madrid" subheader="Máquina 1" press="onpress3">
 						<TileContent unit="EUR" footer="Estado 3">
-							<NumericContent scale="M" value="1.95" valueColor="Critical" indicator="Down"/>
+							<NumericContent scale="M" value="1.95" valueColor="Critical" indicator="Down" />
 						</TileContent>
 					</GenericTile>							
 						</layout:HorizontalLayout>
 						<layout:HorizontalLayout> </layout:HorizontalLayout>
 					
 					
-					
-					
 						<vbm:GeoMap id="GeoMap">
 							<vbm:vos>
 								<vbm:Spots>
-									<vbm:Spot position="-4.552774; 36.737256">
+									<vbm:Spot position="-4.805695; 37.910304">
 										<vbm:tooltip>
 											<commons:RichTooltip text="Esto es una cosa muy molona y este un texto muy grande para ver como se ve" title="Málaga" imageSrc="./images/localizacion1.png"/>
-										</vbm:tooltip>
-									</vbm:Spot>
-									<vbm:Spot position="-4.548636; 36.730091">
-										<vbm:tooltip>
-											<commons:RichTooltip text="Esto es una cosa muy molona también para un segundo centro" title="Málaga 2" imageSrc="./images/localizacion1.png"/>
 										</vbm:tooltip>
 									</vbm:Spot>
 								</vbm:Spots>

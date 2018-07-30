@@ -70,6 +70,48 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing":{
+			"config":{
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "test_sapui5",
+				"controlId": "app",
+				"controlAggregation": "pages"
+				},
+			"targets": {
+				"View1": {
+					"viewName": "View1",
+					"viewLevel": 0,
+					"viewPath":"test_sapui5.view"
+				},
+				"View2": {
+					"viewName": "View2",
+					"viewLevel": 1,
+					"viewPath":"test_sapui5.view"
+				},
+				"View3": {
+					"viewName": "View3",
+					"viewLevel": 2,
+					"viewPath":"test_sapui5.view"
+				}				
+			},				
+			"routes": 
+				[{
+					"pattern": "",
+					"name": "View1",
+					"target": "View1"
+				},
+				{
+					"pattern": "View2",
+					"name": "View2",
+					"target": "View2"
+				},
+				{
+					"pattern": "View3",
+					"name": "View3",
+					"target": "View3"
+				}				]
 		}
 	}
 }
